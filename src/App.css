@@ -1,0 +1,67 @@
+.cash-register {
+  width: 400px;
+  height: 400px;
+  background-color: #f2f2f2;
+  border: 10px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.display {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  background-color: #4caf50;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button.equal {
+  background-color: #fff;
+  color: #4caf50;
+}
+
+button.clear,
+button.operation {
+  background-color: #ff5722;
+}
+
+button.number,
+button.operation {
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #357a38;
+}
